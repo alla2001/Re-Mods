@@ -262,6 +262,76 @@
             gap: 2rem;
         }
 
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100vh;
+            background: rgba(15, 20, 35, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 80px 20px 20px;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            border-left: 1px solid rgba(0, 245, 255, 0.2);
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mobile-nav li {
+            margin: 20px 0;
+        }
+
+        .mobile-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .mobile-nav a:hover {
+            color: #00f5ff;
+        }
+
         .nav-links a {
             color: #fff;
             text-decoration: none;
@@ -715,6 +785,35 @@
             object-fit: cover;
         }
 
+        /* Optimize images and videos for mobile */
+        @media (max-width: 768px) {
+            .project-image {
+                height: 180px;
+            }
+
+            .gallery-media,
+            .gallery-video {
+                height: 200px;
+            }
+
+            /* Disable autoplay videos on mobile to save bandwidth */
+            .project-video,
+            .gallery-video {
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-image {
+                height: 160px;
+            }
+
+            .gallery-media,
+            .gallery-video {
+                height: 180px;
+            }
+        }
+
         /* Screen reader only text */
         .sr-only {
             position: absolute;
@@ -729,16 +828,64 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
             .nav-links {
                 display: none;
             }
-            
+
+            .hamburger {
+                display: flex;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 6rem 0 4rem;
+                background-attachment: scroll;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+                margin: 2rem 0;
+            }
+
+            .section-content {
+                padding: 2.5rem 1.5rem;
+                border-radius: 15px;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
             .projects-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .project-card {
+                min-height: 300px;
+            }
+
+            .project-content {
+                padding: 1.5rem;
             }
 
             .team-grid {
@@ -753,7 +900,11 @@
 
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
+                gap: 1.5rem;
+            }
+
+            .stat-item {
+                padding: 1.5rem;
             }
 
             .stat-number {
@@ -767,6 +918,90 @@
 
             .member-name {
                 font-size: 1.3rem;
+            }
+
+            .pricing-box {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+
+            .submit-btn {
+                padding: 12px 25px;
+                font-size: 0.95rem;
+            }
+
+            .social-link {
+                padding: 15px 25px;
+                font-size: 1rem;
+                margin: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-content {
+                padding: 2rem 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .pricing-box {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+
+            .social-link {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                margin: 0 0.5rem;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .mobile-nav {
+                width: 100%;
+                right: -100%;
+                padding: 80px 30px 20px;
             }
         }
     </style>
@@ -785,8 +1020,24 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section id="home" class="hero">
@@ -1081,6 +1332,32 @@
         // Add staggered animation to team members
         document.querySelectorAll('.team-member').forEach((member, index) => {
             member.style.transitionDelay = `${index * 0.3}s`;
+        });
+
+        // Mobile hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+            }
         });
     </script>
 </body>
