@@ -1,0 +1,39 @@
+{
+  "name": "ReMods - Arma Reforger Mod Development Services",
+  "short_name": "ReMods",
+  "description": "Professional Arma Reforger mod development services. Custom DMR weapons, battle royale mods, FPV drones, and multiplayer systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#00f5ff",
+  "orientation": "portrait-primary",
+  "categories": ["games", "entertainment", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./Assets/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./Assets/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./Assets/Banner.jpg",
+      "sizes": "1920x1080",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "scope": "/",
+  "id": "remods-arma-reforger",
+  "related_applications": [],
+  "prefer_related_applications": false
+}
