@@ -1495,7 +1495,10 @@
     </footer>
 
     <script>
-        // Form is now handled by Formspree
+        // Form submission tracking
+        document.querySelector('.contact-form').addEventListener('submit', function() {
+            gtag('event', 'conversion', {'send_to': 'AW-17581764325/tZ0LCInwtqUbEOXd0b9B'});
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
