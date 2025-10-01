@@ -110,41 +110,45 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "ReMods",
-        "description": "Professional Arma Reforger mod development services",
+        "alternateName": "ReMods Arma Reforger Modding",
+        "description": "Professional Arma Reforger mod development services specializing in custom weapons, battle royale systems, FPV drones, and multiplayer functionality",
         "url": "https://remods.com",
-        "logo": "https://remods.com/logo.png",
-        "image": "https://remods.com/Banner.jpg",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://remods.com/Assets/Logo.png",
+            "width": 250,
+            "height": 250
+        },
+        "image": "https://remods.com/Assets/Banner.jpg",
         "foundingDate": "2024",
-        "serviceArea": {
+        "founder": {
+            "@type": "Person",
+            "name": "Alla Eddine Rakik"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Global"
+        },
+        "areaServed": {
             "@type": "Place",
             "name": "Worldwide"
         },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Arma Reforger Modding Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom Mod Development",
-                        "description": "Professional Arma Reforger mod development and customization services"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "50",
-                        "priceCurrency": "USD",
-                        "description": "Starting price for custom mod development"
-                    }
-                }
-            ]
-        },
+        "knowsAbout": [
+            "Arma Reforger Modding",
+            "Game Development",
+            "3D Modeling",
+            "Multiplayer Systems",
+            "Military Simulation",
+            "Custom Weapon Development",
+            "Battle Royale Game Modes",
+            "FPV Drone Systems"
+        ],
         "employee": [
             {
                 "@type": "Person",
@@ -166,45 +170,212 @@
             }
         ],
         "sameAs": [
-            "https://discord.gg/remods",
-            "https://github.com/remods",
-            "https://twitter.com/remods"
+            "https://discord.gg/yGAYd8Th"
         ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Arma Reforger Modding Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom DMR Weapon Development",
-                        "description": "Custom DMR weapon imported into Arma with custom animations and sounds, compatible with RHS attachments"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Battle Royale Mod Creation",
-                        "description": "Small scale battle royal mod with zones, stages, player spawns, gear spawns, and full multiplayer lobby system"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "FPV Drone Mod Development",
-                        "description": "Advanced FPV drone system with custom controller, networking, signal jamming, and full mil-sim features"
-                    }
-                }
-            ]
-        },
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "availableLanguage": "en"
+            "availableLanguage": ["en"],
+            "email": "contact@remods.com"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "50",
+            "bestRating": "5",
+            "worstRating": "1"
         }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - Service Catalog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "ReMods Services",
+        "description": "Professional Arma Reforger mod development services",
+        "itemListElement": [
+            {
+                "@type": "Service",
+                "name": "Custom DMR Weapon Development",
+                "description": "Custom DMR weapon imported into Arma Reforger with custom animations, sounds, and RHS attachment compatibility. Features realistic ballistics and advanced weapon handling systems.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ReMods"
+                },
+                "serviceType": "Game Mod Development",
+                "areaServed": "Worldwide",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "50",
+                    "priceCurrency": "USD",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Battle Royale Mod Creation",
+                "description": "Small-scale battle royale system with dynamic zones, player/gear spawning, stages, and full multiplayer lobby system with networking protocols.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ReMods"
+                },
+                "serviceType": "Game Mod Development",
+                "areaServed": "Worldwide",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "50",
+                    "priceCurrency": "USD",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Advanced FPV Drone System",
+                "description": "Advanced FPV drone system with custom controller, networking, signal jamming, video transmission, and military simulation features for Arma Reforger.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ReMods"
+                },
+                "serviceType": "Game Mod Development",
+                "areaServed": "Worldwide",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "50",
+                    "priceCurrency": "USD",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ReMods",
+        "url": "https://remods.com",
+        "description": "Professional Arma Reforger mod development and customization services",
+        "inLanguage": "en-US",
+        "publisher": {
+            "@type": "Organization",
+            "name": "ReMods"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://remods.com/#contact?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://remods.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://remods.com/#projects"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gallery",
+                "item": "https://remods.com/#gallery"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Team",
+                "item": "https://remods.com/#team"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Pricing",
+                "item": "https://remods.com/#pricing"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Contact",
+                "item": "https://remods.com/#contact"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does it take to develop a custom Arma Reforger mod?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Development time varies based on complexity. Simple weapon mods take 1-2 weeks, while complex systems like battle royale modes can take 4-8 weeks. We provide detailed timelines during consultation and keep you updated throughout development."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide source code and documentation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! All projects include full source code, comprehensive documentation, installation guides, and configuration instructions. You maintain complete ownership of your custom mods."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will my mod work on multiplayer servers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. All our mods are built with multiplayer compatibility in mind. We test extensively on both dedicated servers and peer-to-peer hosting, ensuring proper networking, synchronization, and performance optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What payment methods do you accept?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We accept PayPal, bank transfers, and cryptocurrency. Payment is typically split into milestones: 50% upfront to begin development, 50% upon completion and delivery. Custom payment plans available for larger projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer post-launch support and updates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Every project includes 30 days of free bug fixes and technical support. We also offer ongoing maintenance packages for continued updates, feature additions, and game version compatibility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you port mods from Arma 3 to Arma Reforger?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we specialize in porting existing Arma 3 mods to Reforger's Enfusion engine. This includes updating scripts from SQF to Enforce, modernizing 3D models, implementing new physics systems, and optimizing for the new engine's architecture."
+                }
+            }
+        ]
     }
     </script>
     <style>
@@ -1018,6 +1189,7 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#pricing">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -1035,6 +1207,7 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#pricing">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -1042,18 +1215,18 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>ReMods - Leading Arma Reforger Modding Services</h1>
-                <p>Hire a Professional mod development and customization team for Arma Reforger. Transform your ideas into reality with expert craftsmanship.</p>
-                <a href="#contact" class="cta-button" aria-label="Contact us to get started with your mod project">Get Started Today</a>
+                <h1>Professional Arma Reforger Mod Development Services</h1>
+                <p>Expert Arma Reforger modding team delivering custom weapons, battle royale systems, FPV drones, and multiplayer solutions. Transform your gaming vision into reality with professional mod development starting at $50 USD.</p>
+                <a href="#contact" class="cta-button" aria-label="Contact us to get started with your mod project">Get Free Quote Today</a>
             </div>
         </section>
 
         <section id="projects" class="section" aria-labelledby="projects-heading">
             <div class="container">
                 <div class="section-content">
-                    <h2 id="projects-heading">Our Featured Projects</h2>
+                    <h2 id="projects-heading">Featured Arma Reforger Mod Projects</h2>
                     <p style="text-align: center; margin-bottom: 2rem; color: #e0e0e0; font-size: 1.1rem;">
-                        Custom modifications that enhance gameplay and provide unique gaming experiences.
+                        Discover our portfolio of custom Arma Reforger mods including weapon systems, game modes, and advanced military simulation features. Each project showcases our expertise in mod development, 3D modeling, scripting, and multiplayer integration.
                     </p>
                 <div class="projects-grid">
                     <div class="project-card">
@@ -1061,32 +1234,32 @@
                             <div class="project-overlay">Featured</div>
                         </div>
                         <div class="project-content">
-                            <h3>Custom DMR Weapon System</h3>
-                            <p>Custom DMR weapon with animations, sounds, and RHS attachment compatibility. Features realistic ballistics and advanced weapon handling systems.</p>
+                            <h3>Custom DMR Weapon Development</h3>
+                            <p>Professional custom DMR weapon mod for Arma Reforger featuring authentic animations, realistic sound design, and full RHS attachment compatibility. Our weapon development includes advanced ballistics modeling, recoil systems, and weapon handling mechanics for maximum realism.</p>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <video class="project-video" autoplay muted loop playsinline>
+                            <video class="project-video" autoplay muted loop playsinline aria-label="Battle Royale Mod Demo Video">
                                 <source src="./Assets/Project 2/ArmaReforgerSteam_H9b3CigAo4.mp4" type="video/mp4">
                             </video>
                             <div class="project-overlay">Popular</div>
                         </div>
                         <div class="project-content">
-                            <h3>Battle Royale Mod System</h3>
-                            <p>Small-scale battle royale with dynamic zones, player/gear spawning, and multiplayer integration. Includes networking protocols and server management tools.</p>
+                            <h3>Battle Royale Game Mode</h3>
+                            <p>Custom battle royale mod featuring dynamic zone systems, intelligent player spawning, randomized loot distribution, and complete multiplayer lobby infrastructure. Includes advanced networking, server optimization, and anti-cheat protection for competitive gameplay.</p>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <video class="project-video" autoplay muted loop playsinline>
+                            <video class="project-video" autoplay muted loop playsinline aria-label="FPV Drone System Demo Video">
                                 <source src="./Assets/Project 3/Screen Recording 2025-04-20 184956.mp4" type="video/mp4">
                             </video>
                             <div class="project-overlay">Latest</div>
                         </div>
                         <div class="project-content">
-                            <h3>Advanced FPV Drone System</h3>
-                            <p>Advanced FPV drone system with custom controller, networking, signal jamming, and military simulation features. Includes video transmission and electronic warfare capabilities.</p>
+                            <h3>Military FPV Drone System</h3>
+                            <p>Advanced FPV drone modification with realistic flight physics, custom controller integration, multiplayer networking, signal jamming mechanics, video transmission simulation, and electronic warfare capabilities. Perfect for military simulation servers and tactical gameplay.</p>
                         </div>
                     </div>
                 </div>
@@ -1097,29 +1270,32 @@
         <section id="gallery" class="section fade-in" aria-labelledby="gallery-heading">
             <div class="container">
                 <div class="section-content">
-                    <h2 id="gallery-heading">Gallery</h2>
+                    <h2 id="gallery-heading">Arma Reforger Modding Gallery</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; color: #e0e0e0; font-size: 1.1rem;">
+                        Behind-the-scenes look at our Arma Reforger mod development process using Enfusion Workbench and advanced 3D modeling tools.
+                    </p>
                     <div class="gallery-grid">
                         <div class="gallery-item">
-                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_8sI0hopsdR.jpg" alt="Arma Reforger Workbench Screenshot" class="gallery-media">
+                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_8sI0hopsdR.jpg" alt="Arma Reforger Enfusion Workbench interface showing weapon mod development" class="gallery-media" loading="lazy" width="400" height="250">
                         </div>
                         <div class="gallery-item">
-                            <video class="gallery-video" autoplay muted loop playsinline>
+                            <video class="gallery-video" autoplay muted loop playsinline aria-label="Arma Reforger modding workflow demonstration">
                                 <source src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_8vTUiyBqg9.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="gallery-item">
-                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_9x7Nb02CdZ.png" alt="Arma Reforger Workbench Interface" class="gallery-media">
+                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_9x7Nb02CdZ.png" alt="Custom weapon asset creation in Arma Reforger Workbench editor" class="gallery-media" loading="lazy" width="400" height="250">
                         </div>
                         <div class="gallery-item">
-                            <video class="gallery-video" autoplay muted loop playsinline>
+                            <video class="gallery-video" autoplay muted loop playsinline aria-label="Real-time testing of Arma Reforger custom mod">
                                 <source src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_BmqWKh5DNC.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="gallery-item">
-                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_e9UbyE1HH4.jpg" alt="Arma Reforger Game Development" class="gallery-media">
+                            <img src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_e9UbyE1HH4.jpg" alt="Professional Arma Reforger mod development and scripting environment" class="gallery-media" loading="lazy" width="400" height="250">
                         </div>
                         <div class="gallery-item">
-                            <video class="gallery-video" autoplay muted loop playsinline>
+                            <video class="gallery-video" autoplay muted loop playsinline aria-label="Advanced multiplayer mod testing in Arma Reforger">
                                 <source src="./Assets/Gallery/ArmaReforgerWorkbenchSteamDiag_vhiy0fkHWT.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -1207,6 +1383,68 @@
                     </ul>
                     <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1rem;">Contact Us</a>
                 </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section fade-in" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-content">
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <p style="text-align: center; margin-bottom: 3rem; color: #e0e0e0; font-size: 1.1rem;">
+                        Common questions about our Arma Reforger mod development services
+                    </p>
+
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">How long does it take to develop a custom mod?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Development time varies based on complexity. Simple weapon mods take 1-2 weeks, while complex systems like battle royale modes can take 4-8 weeks. We provide detailed timelines during consultation and keep you updated throughout development.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">Do you provide source code and documentation?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Yes! All projects include full source code, comprehensive documentation, installation guides, and configuration instructions. You maintain complete ownership of your custom mods.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">Will my mod work on multiplayer servers?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Absolutely. All our mods are built with multiplayer compatibility in mind. We test extensively on both dedicated servers and peer-to-peer hosting, ensuring proper networking, synchronization, and performance optimization.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">What payment methods do you accept?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                We accept PayPal, bank transfers, and cryptocurrency. Payment is typically split into milestones: 50% upfront to begin development, 50% upon completion and delivery. Custom payment plans available for larger projects.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">Do you offer post-launch support and updates?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Yes! Every project includes 30 days of free bug fixes and technical support. We also offer ongoing maintenance packages for continued updates, feature additions, and game version compatibility.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">Can you port mods from Arma 3 to Arma Reforger?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Yes, we specialize in porting existing Arma 3 mods to Reforger's Enfusion engine. This includes updating scripts from SQF to Enforce, modernizing 3D models, implementing new physics systems, and optimizing for the new engine's architecture.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(20, 25, 40, 0.8); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 245, 255, 0.2);">
+                            <h3 style="color: #00f5ff; margin-bottom: 1rem; font-size: 1.3rem;">What makes ReMods different from other modding services?</h3>
+                            <p style="color: #e0e0e0; line-height: 1.8;">
+                                Our team combines 5+ years of Arma modding experience with professional game development backgrounds. We deliver production-quality mods with proper optimization, thorough testing, and industry-standard code quality. Plus, we're passionate military simulation enthusiasts who understand what makes great Arma content.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

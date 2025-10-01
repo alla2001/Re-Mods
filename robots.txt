@@ -1,18 +1,23 @@
+# robots.txt for ReMods - Arma Reforger Modding Services
+# This file tells search engines which pages they can crawl
+
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-# Sitemap
-Sitemap: https://re-mods.com/sitemap.xml
+# Sitemap location
+Sitemap: https://remods.com/sitemap.xml
 
-# Allow search engines to index all content
+# Crawl-delay for polite crawling
 Crawl-delay: 1
 
-# Specific directives for major search engines
+# Google bots
 User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Slurp
+User-agent: Googlebot-Video
 Allow: /

@@ -1,39 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Homepage -->
     <url>
-        <loc>https://re-mods.com/</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://remods.com/Assets/Banner.jpg</image:loc>
+            <image:title>ReMods - Arma Reforger Mod Development Services</image:title>
+            <image:caption>Professional Arma Reforger modding services banner</image:caption>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://remods.com/Assets/Banner.jpg</video:thumbnail_loc>
+            <video:title>ReMods Battle Royale Mod Demo</video:title>
+            <video:description>Demonstration of our custom battle royale mod for Arma Reforger</video:description>
+            <video:content_loc>https://remods.com/Assets/Project%202/ArmaReforgerSteam_H9b3CigAo4.mp4</video:content_loc>
+        </video:video>
     </url>
+
+    <!-- Projects Section -->
     <url>
-        <loc>https://re-mods.com/#projects</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/#projects</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Gallery Section -->
+    <url>
+        <loc>https://remods.com/#gallery</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Team Section -->
     <url>
-        <loc>https://re-mods.com/#gallery</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/#team</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- Pricing Section -->
     <url>
-        <loc>https://re-mods.com/#team</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/#pricing</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Contact Section -->
     <url>
-        <loc>https://re-mods.com/#pricing</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/#contact</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Service Pages -->
     <url>
-        <loc>https://re-mods.com/#contact</loc>
-        <lastmod>2024-01-03</lastmod>
+        <loc>https://remods.com/services/weapon-development.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://remods.com/services/battle-royale.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://remods.com/services/drone-systems.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog Section -->
+    <url>
+        <loc>https://remods.com/blog.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://remods.com/blog/getting-started-with-arma-reforger-modding.html</loc>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://remods.com/blog/top-5-arma-reforger-mods-2025.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://remods.com/blog/custom-weapon-development-guide.html</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
